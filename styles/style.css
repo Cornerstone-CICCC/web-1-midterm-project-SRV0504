@@ -9,9 +9,47 @@
     color: white;
     font-family: 'Inter', sans-serif;
   }
+
+  .html {
+    scroll-behavior: smooth;
+  }
+
+  .text-navbar {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #1e1e1e;
+    padding: 12px 32px;
+    border-radius: 20px;
+    z-index: 1000;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(6px);
+  }
   
+  .text-navbar ul {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .text-navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .text-navbar a:hover {
+    color: #6a4df4;
+  }
+    
   .layout {
     display: flex;
+    align-items: flex-start;
     gap: 60px;
     padding: 60px;
   }
@@ -25,6 +63,7 @@
     padding: 24px;
     text-align: center;
     flex-shrink: 0;
+    align-self: flex-start;
   }
   
   .profile-img {
@@ -91,8 +130,21 @@
   
   .intro p {
     font-size: 20px;
-    color: #ccc;
+    color: #ffffff;
     line-height: 1.8;
     max-width: 720px;
   }
+
+  .about h2 {
+    font-size: 80px;
+  }
+
+  .about p {
+    font-size: 20px;
+    color: #ffffff;
+    line-height: 1.8;
+    max-width: 720px;
+
+  }
+
   
